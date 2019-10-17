@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int Stack[10];
+int index=0;
+
+void push(int data){
+	Stack[index]=data;
+	index++;
+}
+
+void pop(){
+	index--;
+	Stack[index]=0;
+}
+
+int top(){
+	int i=index-1,data=Stack[i];
+	return data;
+} 
+
+void print(){
+	int i;
+	printf("The Stack is as follows\n");
+	for (int i = index-1; i >= 0; i--){
+		printf("%d\n", Stack[i]);
+	}
+}
