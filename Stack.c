@@ -18,6 +18,12 @@ int len(){
 	}
 	return count;	
 }
+int isEmpty(){
+	if(head==NULL){
+		return 1;
+	}
+	return 0;
+}
 
 void print(){
 	struct node* temp=head;
