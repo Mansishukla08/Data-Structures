@@ -9,6 +9,16 @@ struct node
 
 struct node* head;
 
+int len(){
+	int count=0;
+	struct node* temp=head;
+	while(temp!=NULL){
+		count++;
+		temp=temp->link;
+	}
+	return count;	
+}
+
 void print(){
 	struct node* temp=head;
 	printf("The queue is follows: \n");
